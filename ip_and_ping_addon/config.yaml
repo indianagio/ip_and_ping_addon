@@ -1,5 +1,5 @@
 name: Ping and External IP
-version: "1.0.13"
+version: "1.0.14"
 slug: ping_external_ip
 description: Ping 8.8.8.8 and get external IP every X seconds
 startup: services
