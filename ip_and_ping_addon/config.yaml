@@ -1,0 +1,22 @@
+name: Ping and External IP
+version: "1.0.13"
+slug: ping_external_ip
+description: Ping 8.8.8.8 and get external IP every X seconds
+startup: services
+boot: auto
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: false
+panel_icon: mdi:wan
+options:
+  interval: 5
+  mqtt_host: "core-mosquitto"
+  mqtt_username: "homeassistant"
+  mqtt_password: "your_password"
+schema:
+  interval: int
+  mqtt_host: str
+  mqtt_username: str
+  mqtt_password: str
